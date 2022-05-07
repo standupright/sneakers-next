@@ -1,5 +1,7 @@
 :root {
     --yellow: #FCBA04;
+    --common: #1F271B;
+    --essential: #fff;
 }
 
 html,
@@ -7,10 +9,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: -apple-system, 'Open Sans Condensed', 'Passion One', sans-serif;
-    color: #5A626F;
+    color: var(--common);
     background-color: #E7FFF4;
-
-
 }
 
 a {
@@ -22,4 +22,8 @@ a {
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
 }
