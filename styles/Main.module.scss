@@ -1,0 +1,23 @@
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 6px;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 1px 10px rgb(158, 154, 154);
+    }
+
+    &:hover .image {
+        transition: 0.5s;
+        transform: scale(0.75) rotate(-20deg);
+    }
+}
