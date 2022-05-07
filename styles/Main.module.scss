@@ -1,0 +1,74 @@
+.list {
+    margin: 0;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 6px;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 1px 10px rgb(158, 154, 154);
+    }
+
+    &:hover .image {
+        transform: scale(0.75) rotate(-20deg);
+    }
+
+    &:hover .photo {
+        transform: scale(0.75) rotate(10deg);
+    }
+
+    &:hover .profile {
+        transform: scale(0.75) rotate(-10deg);
+    }
+}
+
+.image {
+    transition: 0.5s;
+}
+
+.price {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.about {
+    background: var(--yellow);
+    padding: 40px 0;
+}
+
+.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.photo {
+    transition: 0.5s;
+}
+
+.profile {
+    transition: 0.5s;
+    margin: 20px 0;
+    font-size: 3rem;
+}
+
+.form {
+    padding: 40px 0;
+    background: rgb(188, 34, 195);
+    background: linear-gradient(0deg, rgba(188, 34, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.phone {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
