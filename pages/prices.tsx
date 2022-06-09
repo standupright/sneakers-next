@@ -15,13 +15,16 @@ const Prices: NextPage<PricesProps> = ({ prices }) => {
     )
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-    // Fetch data from external API
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
-    const data = await res.json()
+export default Prices;
 
-    // Pass data to the page via props
-    return { props: { prices: data } }
+export async function getStaticProps() {
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
+    const prices: Price[] = await res.json()
+    return {
+        props: {
+            prices,
+        },
+        revalidate: 10, // In seconds
+    }
 }
 
-export default Prices;

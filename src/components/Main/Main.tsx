@@ -13,7 +13,7 @@ export const Main: React.FC = () => {
                         <li key={index} className={styles.item}>
                             <div className={styles.image}>
                                 <Image
-                                    src={'http://clipart-library.com/img/1743159.png'}
+                                    src={'/sneaker.png'}
                                     alt="Photo of the sneaker"
                                     width={400}
                                     height={300}
@@ -34,7 +34,7 @@ export const Main: React.FC = () => {
                         <li className={styles.item}>
                             <div className={styles.photo}>
                                 <Image
-                                    src={'https://stepn.com/img/team/jerry.png'}
+                                    src={'/jerry.png'}
                                     alt="Photo of the sneaker"
                                     width={520}
                                     height={674}
@@ -47,7 +47,7 @@ export const Main: React.FC = () => {
                         <li className={styles.item}>
                             <div className={styles.photo}>
                                 <Image
-                                    src={'https://stepn.com/img/team/yawn.png'}
+                                    src={'/yawn.png'}
                                     alt="Photo of the sneaker"
                                     width={520}
                                     height={674}
@@ -60,7 +60,7 @@ export const Main: React.FC = () => {
                         <li className={styles.item}>
                             <div className={styles.photo}>
                                 <Image
-                                    src={'https://stepn.com/img/team/Ryan.png'}
+                                    src={'/Ryan.png'}
                                     alt="Photo of the sneaker"
                                     width={520}
                                     height={674}
