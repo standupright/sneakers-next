@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
         <div className={styles.wrapper}>
             <Container maxWidth="lg">
                 <div className={styles.copyright}>
-                    Copyright &copy; Alex 2022
+                    Copyright &copy; standupright 2022
                 </div>
             </Container>
         </div>
