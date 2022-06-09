@@ -1,0 +1,23 @@
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+.header {
+    text-align: center;
+    font-size: 4rem;
+    padding: 20px 0;
+    background: var(--yellow);
+    color: #1F271B;
+}
+
+.title {
+    margin: 0;
+}
+
+.header,
+.main,
+.footer {
+    font-family: 'Passion One', sans-serif;
+}
