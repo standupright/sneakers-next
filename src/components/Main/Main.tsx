@@ -1,11 +1,10 @@
 import { Container } from '@mui/material'
 import React, { ReactNode, useMemo, useState } from 'react'
 import Image from 'next/image'
-import styles from '../../styles/Main.module.scss';
+import styles from './Main.module.scss';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 export const Main: React.FC = () => {
-
     return (
         <div>
             <Container maxWidth="lg">
