@@ -10,6 +10,9 @@ interface PriceProps {
 }
 
 export const PriceItem: React.FC<PriceProps> = ({ price }) => {
+    const handleClick = useCallback(() => {
+        alert('alert')
+    }, []);
     return (
         <div className={styles.wrapper}>
             <Container maxWidth="lg">
@@ -26,6 +29,12 @@ export const PriceItem: React.FC<PriceProps> = ({ price }) => {
                     <div className={styles.item}>
                         <span className={styles.name}>Цена:</span>
                         <span className={styles.name}>{getPrice(price.id)}</span>
+                    </div>
+
+                    <div className={styles.item}>
+                        <button data-testid="btn" onClick={handleClick}>
+                            Click
+                        </button>
                     </div>
                 </div>
             </Container>
