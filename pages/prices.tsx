@@ -1,4 +1,5 @@
 import { GetServerSideProps, NextPage } from 'next';
+import { fetchData } from '../src/api';
 import { PricesScreen } from '../src/components/PricesScreen';
 import { MainLayout } from '../src/layouts/MainLayout/MainLayout';
 import { Price } from '../src/types/prices';
@@ -18,8 +19,7 @@ const Prices: NextPage<PricesProps> = ({ prices }) => {
 export default Prices;
 
 export async function getStaticProps() {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
-    const prices: Price[] = await res.json()
+    const prices = await fetchData();
     return {
         props: {
             prices,
